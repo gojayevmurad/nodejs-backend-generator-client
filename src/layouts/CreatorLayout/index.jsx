@@ -9,7 +9,9 @@ const CreatorLayout = () => {
   return (
     <div className="creator-layout">
       <SideBar />
-      <Outlet />
+      <div className="content">
+        <Outlet />
+      </div>
     </div>
   );
 };

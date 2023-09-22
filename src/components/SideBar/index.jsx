@@ -14,6 +14,7 @@ import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutline
 
 import "./sideBar.scss";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 export default function SideBar() {
   const [currentProjectName, setCurrentProjectName] = useState("Commerce");
@@ -27,50 +28,50 @@ export default function SideBar() {
         <div className="creator_sidebar--content--list">
           <ul className="menu">
             <li className="submenu">
+              <h4 className="submenu__header">Projects</h4>
+              <ul className="submenu--list">
+                <li className="submenu--list__item">
+                  <NavLink to="/creator" className="active">
+                    <FormatListBulletedOutlinedIcon />
+                    <p>My Projects</p>
+                  </NavLink>
+                </li>
+                <li className="submenu--list__item">
+                  <NavLink to="/creator/project/new-project">
+                    <CreateNewFolderOutlinedIcon />
+                    <p>New project</p>
+                  </NavLink>
+                </li>
+                <li className="submenu--list__item">
+                  <NavLink to="/creator/project/templates">
+                    <DataSaverOffOutlinedIcon />
+                    <p> Templates</p>
+                  </NavLink>
+                </li>
+              </ul>
+            </li>
+            <li className="submenu">
               <h4 className="submenu__header">
                 Creator - {currentProjectName}
               </h4>
               <ul className="submenu--list">
                 <li className="submenu--list__item">
-                  <a href="">
+                  <NavLink to="/creator/generate-route">
                     <AddIcon />
                     <p> Generate Route</p>
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="submenu--list__item">
-                  <a href="">
+                  <NavLink to="/creator/authentication">
                     <LockPersonIcon />
                     <p>Authentication</p>
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="submenu--list__item">
-                  <a href="">
+                  <NavLink to="/creator/overview">
                     <PreviewIcon />
                     <p>Overview</p>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li className="submenu">
-              <h4 className="submenu__header">Projects</h4>
-              <ul className="submenu--list">
-                <li className="submenu--list__item">
-                  <a href="">
-                    <CreateNewFolderOutlinedIcon />
-                    <p>New project</p>
-                  </a>
-                </li>
-                <li className="submenu--list__item">
-                  <a href="">
-                    <FormatListBulletedOutlinedIcon />
-                    <p>My Projects</p>
-                  </a>
-                </li>
-                <li className="submenu--list__item">
-                  <a href="">
-                    <DataSaverOffOutlinedIcon />
-                    <p> Templates</p>
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -78,22 +79,22 @@ export default function SideBar() {
               <h4 className="submenu__header">Account</h4>
               <ul className="submenu--list">
                 <li className="submenu--list__item">
-                  <a href="">
+                  <NavLink to="/creator/account/my-profile">
                     <AccountCircleOutlinedIcon />
                     <p>My profile</p>
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="submenu--list__item">
-                  <a href="">
+                  <NavLink to="/creator/account/settings">
                     <SettingsOutlinedIcon />
                     <p>Settings</p>
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="submenu--list__item">
-                  <a href="">
+                  <NavLink to="/creator/account/pricing">
                     <LocalAtmOutlinedIcon />
                     <p>Pricing</p>
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </li>
@@ -101,16 +102,16 @@ export default function SideBar() {
               <h4 className="submenu__header">Support</h4>
               <ul className="submenu--list">
                 <li className="submenu--list__item">
-                  <a href="">
+                  <NavLink to="/creator/support/contact">
                     <LocalAtmOutlinedIcon />
                     <p>Contact</p>
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="submenu--list__item">
-                  <a href="">
+                  <NavLink to="/crator/support/chat">
                     <ChatBubbleOutlineOutlinedIcon />
                     <p>Chat</p>
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </li>

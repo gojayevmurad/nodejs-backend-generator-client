@@ -1,7 +1,7 @@
 import AuthLayout from "../layouts/AuthLayout";
 import CreatorLayout from "../layouts/CreatorLayout";
 import MainLayout from "../layouts/MainLayout";
-import Dashboard from "../pages/Dashboard";
+import MyProjects from "../pages/MyProjects";
 import ForgotPassword from "../pages/ForgotPassword";
 import Landing from "../pages/Landing";
 import Login from "../pages/Login";
@@ -49,7 +49,7 @@ const routes = [
     children: [
       {
         index: true,
-        element: <Dashboard />,
+        element: <MyProjects />,
       },
     ],
   },
