@@ -31,7 +31,7 @@ export default function SideBar() {
               <h4 className="submenu__header">Projects</h4>
               <ul className="submenu--list">
                 <li className="submenu--list__item">
-                  <NavLink to="/creator" className="active">
+                  <NavLink to="/creator/project/my-projects">
                     <FormatListBulletedOutlinedIcon />
                     <p>My Projects</p>
                   </NavLink>
@@ -62,13 +62,13 @@ export default function SideBar() {
                   </NavLink>
                 </li>
                 <li className="submenu--list__item">
-                  <NavLink to="/creator/authentication">
+                  <NavLink to="/creator/authentication-route">
                     <LockPersonIcon />
                     <p>Authentication</p>
                   </NavLink>
                 </li>
                 <li className="submenu--list__item">
-                  <NavLink to="/creator/overview">
+                  <NavLink to="/creator/overview-project">
                     <PreviewIcon />
                     <p>Overview</p>
                   </NavLink>
@@ -108,7 +108,7 @@ export default function SideBar() {
                   </NavLink>
                 </li>
                 <li className="submenu--list__item">
-                  <NavLink to="/crator/support/chat">
+                  <NavLink to="/creator/support/chat">
                     <ChatBubbleOutlineOutlinedIcon />
                     <p>Chat</p>
                   </NavLink>

@@ -8,6 +8,16 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import ResetPassword from "../pages/ResetPassword";
 import PrivateRoute from "./PrivateRoute";
+import NewProject from "../pages/NewProject";
+import Templates from "../pages/Templates";
+import GenerateRoute from "../pages/GenerateRoute";
+import AuthenticationRoute from "../pages/AuthenticationRoute";
+import OverviewProject from "../pages/OverviewProject";
+import MyProfile from "../pages/MyProfile";
+import Settings from "../pages/Settings";
+import Pricing from "../pages/Pricing";
+import Contact from "../pages/Contact";
+import Chat from "../pages/Chat";
 
 const routes = [
   {
@@ -48,8 +58,49 @@ const routes = [
     element: <CreatorLayout />,
     children: [
       {
-        index: true,
+        path: "project/my-projects",
         element: <MyProjects />,
+      },
+      {
+        path: "project/new-project",
+        element: <NewProject />,
+      },
+      {
+        path: "project/templates",
+        element: <Templates />,
+      },
+      // creator
+      {
+        path: "generate-route",
+        element: <GenerateRoute />,
+      },
+      {
+        path: "authentication-route",
+        element: <AuthenticationRoute />,
+      },
+      {
+        path: "overview-project",
+        element: <OverviewProject />,
+      },
+      {
+        path: "account/my-profile",
+        element: <MyProfile />,
+      },
+      {
+        path: "account/settings",
+        element: <Settings />,
+      },
+      {
+        path: "account/pricing",
+        element: <Pricing />,
+      },
+      {
+        path: "support/contact",
+        element: <Contact />,
+      },
+      {
+        path: "support/chat",
+        element: <Chat />,
       },
     ],
   },
